@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
-    "start": "sh -c 'next start -p "${PORT: -80
-    }"'",
+    "start": "sh -c \"next start -p ${PORT:-80}\"",
     "lint": "eslint"
   },
   "dependencies": {
