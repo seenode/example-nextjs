@@ -1,6 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Deploy Next.js on Seenode
 
-## Getting Started
+This is a simple Next.js app set up to deploy on [Seenode](https://seenode.com).
+
+It shows a basic page and lets you add API routes if you need them.
+
+### Quick start
+Read the [Seenode guide for Next.js](https://seenode.com/docs/frameworks/javascript/nextjs/).
+
+## How to Deploy on Seenode
+
+1. Go to the [Seenode dashboard](https://cloud.seenode.com) and create a new web service from this repo.
+2. Use these commands when asked:
+   - Build: `npm run build`
+   - Start: `npm start`
+3. Click Create. Seenode will give you a public URL when it’s live.
+
+That's it! Your Next.js app will be deployed and available at a public URL.
+
+### What you get
+
+- Works out of the box on Seenode.
+- No port setup needed. Seenode sets the `PORT` and Next.js uses it.
+- Add API routes under `app/api` if you want server endpoints.
+
+## Getting Started (Local Development)
 
 First, run the development server:
 
@@ -16,21 +39,16 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Edit the homepage at `src/app/page.tsx`. Changes show up automatically while the dev server runs.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to load fonts.
 
-## Learn More
+## Learn more
 
-To learn more about Next.js, take a look at the following resources:
+Helpful links:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Next.js docs](https://nextjs.org/docs)
+- [Learn Next.js](https://nextjs.org/learn)
+- [Seenode guide for Next.js](https://seenode.com/docs/frameworks/javascript/nextjs/)
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
