@@ -20,7 +20,7 @@ That's it! Your Next.js app will be deployed and available at a public URL.
 ### What you get
 
 - Works out of the box on Seenode.
-- No port setup needed. Seenode sets the `PORT` and Next.js uses it.
+- No port setup needed. Port is set to 80. Just make sure to enter 80 in the port input.
 - Add API routes under `app/api` if you want server endpoints.
 
 ## Getting Started (Local Development)
